@@ -1,0 +1,48 @@
+.topimage {
+    margin-left: 0px;
+    left: 0px;
+}
+
+.textheader {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: rgb(49, 255, 176);
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Bold1';
+    src: url(fonts/font1.woff);
+}
+
+.bigfont {
+    font-family: Bold1;
+}
+
+@font-face {
+    font-family: 'Anivers';
+    src: url(fonts/Anivers.woff);
+}
+.anivers {
+    font-family: 'Anivers';
+}
+
+.footer1 {
+    width: 100%;
+    background-color: rgb(228, 228, 228);
+    margin-left: 0;
+}
+
+.center1 {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+  }
+
+.kakik {
+    margin: 10px;
+}
+
+.spacedmargin {
+    margin-left: 50px;
+}
+
