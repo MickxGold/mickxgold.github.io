@@ -1,150 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Home - GPwAK</title>
-	<link rel="icon" href="images/logo.png" type="image/icon type">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<link href="style.css" rel="stylesheet">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-		</style> 
-	<!-- <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css"> -->
-	
-</head>
-<body class="nav-dark">
+<html>
+<title>Guatemala: Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="style.css" rel="stylesheet">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+.mySlides {display:none;}
 
-	<body style="color: rgb(255, 255, 255); font-family: Rubik;">
-		
-<!-- Navigation -->
-<nav class = "navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-	<div class = "container-fluid">
-		<a class="navbar-brand" href = "index.html"><img src = "images/navname.png" height=50px> </a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id = "navbarResponsive">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="projects.html">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="arts.html">Concept Art</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="socials.html">Social Media</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="software.html">Software</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top anivers">
+  <div class="w3-bar w3-white w3-padding " style="letter-spacing:4px;">
+    <a href="index.html" class="w3-bar-item w3-button">Discover Guatemala</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="history.html" class="w3-bar-item w3-button">History</a>
+      <a href="culture.html" class="w3-bar-item w3-button">Culture</a>
+      <a href="art.html" class="w3-bar-item w3-button">General</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="min-width:100%" id="home">
+    <img class="mySlides w3-animate-fading" src="images/toppage.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/slideshow2.jpg" style="width:100%">
+    <img class="mySlides w3-animate-fading" src="images/slideshow3.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-padding-large">
+    <h1 class = "center textheader anivers" style="font-size: 60px;"">Discover Guatemala</h1>
+    <h1 class = "center textheader anivers" >The cultural melting pot</h1>
+  </div>
+</header>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+  }
+  </script>
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
 
 
-<!-- Carousel -->
-<div id="slides" class = "carousel slide" data-ride="carousel">
-	<ul class = "carousel-indicators">
-	</ul>
-	<div class="carousel-inner">
-		<div class="carousel-item active">
-			<video autoplay muted loop id="myVideo" width=100%>
-				<source src="images/amewidelogo.mp4" type="video/mp4"  >
-			  </video>
-			<div class = "carousel-caption">
-				<h1 class = "center" style="background-color: rgba(0, 0, 0, 0.5); color: rgb(49, 255, 176);"><img src = "images/navname.png" height=100px></h1>
-				<h3 class = "center" style="background-color: rgba(0, 0, 0, 0.5); color: rgb(49, 255, 176);"><img src = "images/homedesc.png" height=50px></h3>
-				<a class="btn btn-lg" href="contact.html" role="button" style="background-color: rgb(113, 196, 140); outline-color: rgb(41, 77, 53); color: white;"><img src = "images/homeproj.png" height=30px></a>
-				<a class="btn btn-lg" href="socials.html" role="button" style="background-color: rgb(113, 196, 140); outline-color: rgb(41, 77, 53); color: white;"><img src = "images/homesocial.png" height=30px></a>
-			</div>
-		</div>
-	</div>
+  
+  <hr>
+  
+
+  <div class="row">
+    <div class="column">
+      <h4>Many countries boast a unique culture, have a complex yet intriguing history, and promote their many tourist attractions based on their past or appealing landscapes. Different places have rich history and culture, and Guatemala is no exception. With amazing natural tourist attractions like Lake Atitlan, a beautiful lake surrounded by volcanoes and forests, and Tikal, a popular tourist area that gives a view into the way of the Mayans who used to live there, as Tikal was one of the major Mayan cities when it was still actively used.
+      </h4>
+      <h4>
+        Its culture is unique because the native Mayans were not entirely conquered by the Spanish, allowing them to continue their lifestyles yet still merge aspects of Spanish culture with their own. Some of this merged culture is still visible today, from meals like Kak'ik, a traditional stew created by Mayans unique to Guatemala, to the architecture of many buildings in town centers. Guatemala has a rich culture and vast history that is found nowhere else.
+      </h4>
+    </div>
+    <div class="column">
+      <img src="images/guatmap.jpg">
+    </div>
+  </div>
+
+  <hr>
+
+
+<!-- End page content -->
 </div>
 
 
-<!-- Jumbtron -->
-<div class = "jumbotron text-center header-dark" style="margin-bottom:0">
-<h1 style="color: rgb(49, 255, 176); font-family: 'Rubik' ">Welcome to my page!</h1>
-<p style="color: rgb(49, 255, 176);">I specialize in programming, game development, concept art, and streaming.</p>
-</div>
 
-<!--- Three Column Section -->
-<div class="container text-center">
-	<div class="row">
-		<div class="col-sm-4">
-			<h3>why is this using heading 3</h3>
-			<p>i have no idea</p>
-		</div>
-		<div class="col-sm-4">
-			<h3>WHY ARE THERE 2 USING H3 BUT 1 USING H1</h3>
-			<p>AAAAAAAAAAA</p>
-		</div>
-		<div class="col-sm-4">
-			<h3>HOW</h3>
-			<p>IDK JUST HELP</p>
-		</div>
-	</div>
-</div>
-
-
-<!--- Two Column Section -->
-<div class = "container-fluid padding">
-	<div class = "row padding">
-		<div class = "col-md-12 col-lg-6">
-			<h2>Header</h2>
-			<p>text</p>
-			<p>text</p>
-		</div>
-		<div class = "col-md-12 col-lg-6">
-			<img src = "images/roblox1.png" class = "img-fluid">
-		</div>
-	</div>
-</div>
-
-<!-- Two Column Section -->
-<div class = "container-fluid padding">
-	<div class = "row padding">
-		<div class = "col-md-12 col-lg-6">
-			<h1>Header</h1>
-			<p>text</p>
-		</div>
-		<div class = "col-md-12 col-lg-6">
-			<img class = "img-fluid" src = "images/roblox2.png">
-		</div>
-	</div>
-</div>
-
-<!--Three Column-->
-<div class = "container-fluid padding">
-	<div class = "row padding">
-		<div class = "col-md-12 col-lg-4">
-			<h1>Header</h1>
-			<p>text</p>
-		</div>
-		<div class = "col-md-12 col-lg-4">
-			<img class = "img-fluid" src = "images/roblox3.png">
-		</div>
-		<div class = "col-md-12 col-lg-4">
-			<img class = "img-fluid" src = "images/roblox1.png">
-		</div>
-	</div>
-</div>
-
-<!--Ending-->
-<div class="jumbotron text-center header-dark" style="margin-bottom:0">
-	<h1>Contact</h1>
-	<p>Email: gameplaywithak@gmail.com</p>
-</div>
-
+<!-- Footer -->
+<footer class="footer1 w3-bar w3-padding anivers">
+  <p>Akash Keshav, 2021</p>
+</footer>
 
 </body>
 </html>
